@@ -51,13 +51,15 @@ export default function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0 gap-2"
-            data-testid="nav-launch-bot"
-          >
-            Launch Bot
-            <ExternalLink className="w-4 h-4" />
-          </Button>
+          <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0 gap-2"
+              data-testid="nav-launch-bot"
+            >
+              Launch Bot
+              <ExternalLink className="w-4 h-4" />
+            </Button>
+          </a>
         </div>
       </div>
     </motion.nav>

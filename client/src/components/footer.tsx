@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Send, Github, Twitter, MessageCircle } from "lucide-react";
+import { Send, Twitter, MessageCircle } from "lucide-react";
 import logoImage from "@assets/Untitled design (4)_1762025526490.png";
 
 export default function Footer() {
@@ -53,7 +53,9 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="#" 
+                  href="http://t.me/parapack" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                   data-testid="footer-telegram"
                 >
@@ -63,17 +65,9 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                  data-testid="footer-github"
-                >
-                  <Github className="w-4 h-4" />
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
+                  href="https://x.com/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                   data-testid="footer-twitter"
                 >

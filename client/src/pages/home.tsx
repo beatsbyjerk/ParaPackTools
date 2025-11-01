@@ -159,14 +159,16 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0 animate-pulse-glow"
-              data-testid="button-launch-bot"
-            >
-              Launch Bot
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0 animate-pulse-glow"
+                data-testid="button-launch-bot"
+              >
+                Launch Bot
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
             <Link href="/docs">
               <Button 
                 size="lg" 
@@ -327,14 +329,16 @@ export default function Home() {
             <p className="text-xl text-muted-foreground mb-8">
               Join traders using ParaPack Tools to maximize their Solana trading efficiency
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0"
-              data-testid="button-launch-bot-cta"
-            >
-              Launch on Telegram
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0"
+                data-testid="button-launch-bot-cta"
+              >
+                Launch on Telegram
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </motion.div>
         </div>
       </section>

@@ -707,13 +707,15 @@ export default function Documentation() {
             <p className="text-muted-foreground mb-6">
               Open ParaPack on Telegram and start automating your Solana trading with simple button taps
             </p>
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700"
-              data-testid="button-launch-telegram"
-            >
-              Launch Bot on Telegram
-            </Button>
+            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700"
+                data-testid="button-launch-telegram"
+              >
+                Launch Bot on Telegram
+              </Button>
+            </a>
           </Card>
         </motion.div>
       </div>
