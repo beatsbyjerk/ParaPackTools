@@ -1,0 +1,64 @@
+a powerful tool designed to automate trading activities on the Pumpfun & Raydium platform. With a suite of customizable modes for buying, selling, and wallet management, this bot provides a fully automated solution for generating volume, bundling, executing trades, and managing wallets for the purpose of optimizing token activities.
+
+Built using Node.js, the bot supports advanced functionality such as interacting with JITO for MEV (Maximum Extractable Value) protection and enables quick and efficient token purchases and sales across multiple wallets.
+
+Features
+Multiple Buying Modes: Includes modes for generating volume, monitoring new launches, and spamming buy transactions.
+Selling Modes: Includes bulk sell, single wallet sell, and cleanup modes to manage your token holdings effectively.
+Wallet Management: Create and manage wallets, check balances, and close token accounts.
+Transfer Modes: Efficiently transfer SOL between wallets and consolidate token balances.
+JITO Integration: Optional use of JITO for MEV protection and bundle transactions for added efficiency.
+Custom Configurations: Adjustable settings for delays, slippage, buy/sell amounts, and more.
+Prerequisites
+To run the Pump.Fun Volume Bot, ensure you have the following:
+
+Node.js: Download Node.js
+npm: The Node.js package manager, which comes pre-installed with Node.js.
+RPC & WSS URLs: Required to connect to the blockchain.
+Solana Wallet: Private keys for wallet management and token transfers.
+JITO Access (Optional): If you plan to use JITO features, make sure you have access to the JITO BlockEngine.
+
+
+Buy Modes
+Gen Volume (JITO): Enter the token address (CA) and delay to generate volume using multiple wallets. The bot will bundle up to 10 wallets for buying the token until each wallet has made a purchase.
+
+Auto Volume (JITO): Monitors the dev address (configured in the config) and automatically executes the Human Mode when a new launch is detected. This mode performs the Buy Buy Sell cycle until all wallets have completed their actions.
+
+Human Mode (JITO): Similar to Auto Volume, but manually initiated. The bot will perform a Buy Buy Sell cycle until all wallets have bought and sold the token.
+
+MicroBuy (SPAM): This mode continuously executes small buy transactions based on the configured amount of SOL (default: 0.0001) without using JITO protection, running indefinitely until manually stopped.
+
+Same TX: Executes a single buy and sell transaction using the first wallet in the wallet.txt. This mode loops indefinitely until stopped.
+
+Warmup Mode: Randomly buys and sells recently traded tokens to simulate human-like activity and avoid detection by on-chain scanners.
+
+Stagger Mode: Executes a staggered buy cycle with a user-defined delay, looping a set number of times. Users can choose whether to use JITO in this mode.
+
+Back to Main Menu: Return to the main menu by pressing X.
+
+2. Sell Modes
+Sell All (JITO): Bundles all wallets and sells 100% of the tokens in each wallet until all wallets have been sold.
+
+Single Sell: Prompts for a token address (CA) and a wallet index. The bot will sell 100% of the tokens in the selected wallet.
+
+Cleanup Mode: Sells all Pump.Fun tokens in all wallets, cleaning up the token balances across the wallets.
+
+Back to Main Menu: Return to the main menu by pressing X.
+
+3. Wallet Modes
+Gen Wallets: Generates a specified number of wallets, storing them in the /keypairs folder along with the wallets.txt file.
+
+Check Balances: Checks the SOL and SPL token balances of all wallets.
+
+Close Token Accounts: Closes SPL Token Accounts for each wallet, reclaiming rent fees.
+
+Create Profiles: Creates profiles on Pump.Fun (Username + Bio).
+
+Back to Main Menu: Return to the main menu by pressing X.
+
+4. Transfer Modes
+Transfer SOL to Sub Wallets: Transfers SOL from the main wallet (sender address in the config) to all sub-wallets.
+
+Transfer SOL from Sub Wallets: Sends SOL from all sub-wallets back to the main wallet, leaving 0.0009 SOL in each sub-wallet.
+
+Transfer Tokens: Transfers all tokens from the sub-wallets to the wallet address specified during execution.
