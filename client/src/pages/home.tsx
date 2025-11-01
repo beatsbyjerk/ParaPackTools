@@ -165,7 +165,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+            <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 animate-pulse-glow"
@@ -335,7 +335,7 @@ export default function Home() {
             <p className="text-xl text-muted-foreground mb-8">
               Join traders using PumpDotVol to maximize their Solana trading efficiency
             </p>
-            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+            <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0"

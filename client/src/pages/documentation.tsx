@@ -707,7 +707,7 @@ export default function Documentation() {
             <p className="text-muted-foreground mb-6">
               Open PumpDotVol on Telegram and start automating your Solana trading with simple button taps
             </p>
-            <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+            <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"

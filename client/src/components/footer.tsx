@@ -53,7 +53,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="http://t.me/parapack" 
+                  href="http://t.me/Pumpdotvol_bot" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
@@ -65,7 +65,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://x.com/" 
+                  href="https://x.com/pumpdotvol" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"

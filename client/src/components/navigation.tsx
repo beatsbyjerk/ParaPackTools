@@ -51,7 +51,7 @@ export default function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
+          <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
             <Button 
               className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 gap-2"
               data-testid="nav-launch-bot"
