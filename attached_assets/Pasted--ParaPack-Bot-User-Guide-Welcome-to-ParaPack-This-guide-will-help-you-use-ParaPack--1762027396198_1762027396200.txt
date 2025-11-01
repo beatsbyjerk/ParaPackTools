@@ -1,0 +1,630 @@
+# 📱 ParaPack Bot - User Guide
+
+## Welcome to ParaPack!
+
+This guide will help you use ParaPack, your personal Solana volume bot, right from Telegram. No coding required - everything is done through simple buttons and messages.
+
+---
+
+## 🚀 Getting Started
+
+### Opening the Bot
+
+1. Open Telegram
+2. Search for your ParaPack bot by username
+3. Tap on the bot to open it
+4. Press the **START** button at the bottom
+
+You'll see a personalized welcome message with your name! 👋
+
+---
+
+## 🏠 Main Menu
+
+After starting the bot, you'll see the main menu with these options:
+
+- **🛒 Buy Modes** - Different ways to buy tokens
+- **💰 Sell Modes** - Different ways to sell tokens
+- **👛 Wallet Management** - Create and manage your wallets
+- **💸 Transfer** - Move SOL between wallets
+- **⚙️ Settings** - Customize how the bot works
+- **📊 Statistics** - See your trading stats
+- **ℹ️ Help** - Get help anytime
+
+Just tap any button to explore!
+
+---
+
+## 👛 Setting Up Your Wallets
+
+Before you can trade, you need wallets. Here's how:
+
+### Creating New Wallets
+
+1. Tap **👛 Wallet Management**
+2. Tap **➕ Generate Wallets**
+3. Send a number (how many wallets you want)
+   - Example: Type `10` and send
+4. Done! Your wallets are created and saved automatically
+
+**💡 Tip:** Generate 10-20 wallets for best volume results
+
+### Importing Existing Wallets
+
+1. Tap **👛 Wallet Management**
+2. Tap **📥 Import Wallets**
+3. Paste your wallet private keys
+   - One per line, or
+   - In format: `PublicKey:PrivateKey`
+4. Send the message
+5. Done! Your wallets are imported and saved
+
+**💡 Tip:** All your wallets are backed up automatically with timestamps
+
+### Viewing Your Wallets
+
+1. Tap **👛 Wallet Management**
+2. Tap **📋 View Wallets**
+3. You'll see 5 wallets per page
+4. Use **◀️ Prev** and **Next ▶️** buttons to browse
+5. Tap any wallet to see details:
+   - Full address
+   - Current balance
+   - Copy private key
+   - Remove wallet
+
+### Checking Balances
+
+1. Tap **👛 Wallet Management**
+2. Tap **💵 Check Balances**
+3. Wait a moment... ⏳
+4. See all wallet balances and total
+
+---
+
+## 💰 Funding Your Wallets
+
+Before trading, you need to put SOL in your wallets:
+
+### Sending SOL to Volume Wallets
+
+1. Tap **💸 Transfer**
+2. Tap **📤 Send to Volume Wallets**
+3. Tap **✅ Confirm**
+4. Wait for confirmation
+
+**⚠️ Important:** Make sure your main wallet has enough SOL first!
+
+**💡 Tip:** A 2% fee is automatically taken from all transfers
+
+---
+
+## 🛒 Buying Tokens (Volume Generation)
+
+ParaPack offers 7 different buy modes:
+
+### 1. Bundle Buy (JITO) - Most Popular
+
+**Best for:** Fast volume generation with MEV protection
+
+1. Tap **🛒 Buy Modes**
+2. Tap **📦 Bundle Buy (JITO)**
+3. Send the token address (CA)
+   - Example: `7xKX...abc`
+4. Send delay in milliseconds
+   - Example: `5000` (5 seconds)
+5. Watch it work! ⚡
+
+**What it does:** Bundles all your wallets together and buys the token with JITO protection.
+
+### 2. Auto Volume
+
+**Best for:** Automatically voluming new launches
+
+1. Tap **🛒 Buy Modes**
+2. Tap **🤖 Auto Volume**
+3. Send minimum delay (seconds)
+   - Example: `5`
+4. Send maximum delay (seconds)
+   - Example: `15`
+5. Send sell percentage
+   - Example: `100` (sell 100%)
+6. Bot monitors and auto-trades new launches! 🎯
+
+### 3. Human Mode
+
+**Best for:** Looking like a real trader
+
+1. Tap **🛒 Buy Modes**
+2. Tap **👤 Human Mode**
+3. Send token address
+4. Send min delay (seconds)
+5. Send max delay (seconds)
+6. Send sell percentage
+7. Bot trades like a human! 🧑
+
+**What it does:** Random delays, Buy-Buy-Sell pattern to mimic human trading.
+
+### 4. MicroBuy (SPAM)
+
+**Best for:** Constantly bumping a token
+
+1. Tap **🛒 Buy Modes**
+2. Tap **🔁 MicroBuy (SPAM)**
+3. Send token address
+4. Send delay in milliseconds
+5. Bot keeps buying small amounts until you stop! 🔄
+
+**⚠️ Tip:** This runs forever until you tap **⏹️ Stop** or send `/cancel`
+
+### 5. BumpBot
+
+**Best for:** Same transaction buy/sell
+
+1. Tap **🛒 Buy Modes**
+2. Tap **🎯 BumpBot**
+3. Send token address
+4. Send buy amount in SOL
+5. Send delay
+6. Bot buys and sells in same TX! ⚡
+
+### 6. Warmup Mode
+
+**Best for:** Making wallets look active
+
+1. Tap **🛒 Buy Modes**
+2. Tap **🔥 Warmup Mode**
+3. Send number of loops
+   - Example: `10`
+4. Send delay
+5. Bot randomly trades to warm up wallets! 🔥
+
+### 7. Stagger Buy
+
+**Best for:** Sequential buying with delays
+
+1. Tap **🛒 Buy Modes**
+2. Tap **⏱️ Stagger Buy**
+3. Send token address
+4. Send delay between buys
+5. Send number of loops
+6. Choose JITO (y/n)
+7. Bot buys one wallet at a time! ⏳
+
+---
+
+## 💰 Selling Tokens
+
+ParaPack offers 5 different sell modes:
+
+### 1. Sell All (JITO) - Most Popular
+
+**Best for:** Selling from all wallets at once
+
+1. Tap **💰 Sell Modes**
+2. Tap **📤 Sell All (JITO)**
+3. Send token address
+4. Send percentage to sell
+   - Example: `100` (sell all)
+   - Or `50` (sell half)
+5. Done! All wallets sell together! 🚀
+
+### 2. Single Wallet Sell
+
+**Best for:** Selling from one specific wallet
+
+1. Tap **💰 Sell Modes**
+2. Tap **👤 Single Wallet Sell**
+3. Send token address
+4. Send wallet number
+   - Example: `1` (first wallet)
+5. Done! ✅
+
+### 3. Delay Sell
+
+**Best for:** Selling with delays between wallets
+
+1. Tap **💰 Sell Modes**
+2. Tap **⏰ Delay Sell**
+3. Send token address
+4. Send delay in milliseconds
+5. Bot sells from each wallet with delay! ⏱️
+
+### 4. Cleanup Mode
+
+**Best for:** Selling ALL PumpFun tokens
+
+1. Tap **💰 Sell Modes**
+2. Tap **🧹 Cleanup Mode**
+3. Tap **✅ Confirm**
+4. Wait... ⏳
+5. All PumpFun tokens sold! 🧹
+
+**⚠️ Warning:** This sells EVERYTHING! Make sure you want to do this!
+
+### 5. Raydium Single Sell
+
+**Best for:** Selling on Raydium DEX
+
+1. Tap **💰 Sell Modes**
+2. Tap **🌊 Raydium Single Sell**
+3. Send token address
+4. Send percentage to sell
+5. Bot sells on Raydium! 🌊
+
+---
+
+## 💸 Getting Your SOL Back
+
+When you're done trading and want your SOL back:
+
+### Returning SOL to Main Wallet
+
+1. Tap **💸 Transfer**
+2. Tap **📥 Return to Main Wallet**
+3. Tap **✅ Confirm**
+4. Wait for confirmation
+5. Done! SOL returned to main wallet 💰
+
+**💡 Note:** Each wallet keeps 0.0009 SOL for rent
+
+### Transferring Tokens
+
+Need to move tokens to another wallet?
+
+1. Tap **💸 Transfer**
+2. Tap **🔄 Transfer SPL Tokens**
+3. Send token address
+4. Send destination wallet address
+5. Done! Tokens transferred! 🔄
+
+---
+
+## ⚙️ Customizing Settings
+
+Make the bot work YOUR way:
+
+### Changing Slippage
+
+Higher slippage = more likely to execute, but worse price
+
+1. Tap **⚙️ Settings**
+2. Tap **💹 Slippage**
+3. Send new percentage
+   - Example: `20` (for 20%)
+4. Saved! ✅
+
+**💡 Recommended:** 10-20% for volatile tokens
+
+### Changing Buy Amounts
+
+1. Tap **⚙️ Settings**
+2. Tap **📊 Buy Amounts**
+3. Choose what to change:
+   - **📉 Min Buy** - Minimum buy size
+   - **📈 Max Buy** - Maximum buy size
+   - **🔬 Micro Buy** - Micro buy size
+4. Send new amount in SOL
+5. Saved! ✅
+
+### Changing Delay
+
+1. Tap **⚙️ Settings**
+2. Tap **⏱️ Delay**
+3. Send new delay in milliseconds
+   - Example: `3000` (3 seconds)
+4. Saved! ✅
+
+### Toggling JITO
+
+JITO provides MEV protection and faster execution
+
+1. Tap **⚙️ Settings**
+2. Tap **⚡ JITO Toggle**
+3. Tap **Turn ON** or **Turn OFF**
+4. Done! ⚡
+
+**💡 Recommended:** Keep JITO ON for better results
+
+### Resetting Settings
+
+Want to go back to defaults?
+
+1. Tap **⚙️ Settings**
+2. Tap **🔄 Reset Settings**
+3. Tap **✅ Confirm**
+4. All settings reset! 🔄
+
+---
+
+## 📊 Viewing Your Statistics
+
+See how much you've traded:
+
+1. Tap **📊 Statistics** from main menu
+   - Or send `/stats` anytime
+2. View your stats:
+   - **💼 Total Transactions** - How many trades
+   - **📈 Total Volume** - Total SOL traded
+   - **💸 Total Fees Paid** - Fees paid to the bot
+   - **⏰ Last Transaction** - When you last traded
+   - **👛 Wallets** - How many wallets you have
+   - **📅 Member Since** - When you started
+
+---
+
+## 🔧 Wallet Utilities
+
+### Closing Empty Token Accounts
+
+Save rent by closing empty accounts:
+
+1. Tap **👛 Wallet Management**
+2. Tap **🗑️ Close Token Accounts**
+3. Tap **✅ Confirm**
+4. Wait... ⏳
+5. Rent reclaimed! 💰
+
+### Creating PumpFun Profiles
+
+Make wallets look more authentic:
+
+1. Tap **👛 Wallet Management**
+2. Tap **👤 Create Profiles**
+3. Tap **✅ Confirm**
+4. Wait... ⏳
+5. Profiles created! 🎭
+
+### Unwrapping WSOL
+
+Convert wrapped SOL back to normal SOL:
+
+1. Tap **👛 Wallet Management**
+2. Tap **🔓 Unwrap WSOL**
+3. Tap **✅ Confirm**
+4. Wait... ⏳
+5. WSOL unwrapped! 💎
+
+---
+
+## 💡 Pro Tips
+
+### For Best Results:
+
+**1. Start Small**
+- Test with small amounts first
+- Get comfortable with the bot
+- Then scale up!
+
+**2. Use Multiple Wallets**
+- 10-20 wallets = better volume
+- More wallets = more realistic trading
+
+**3. Keep JITO On**
+- Faster execution
+- MEV protection
+- Better results overall
+
+**4. Check Balances Often**
+- Make sure wallets have enough SOL
+- Avoid failed transactions
+
+**5. Use Human Mode**
+- Looks more natural
+- Random delays
+- Less suspicious
+
+### Avoiding Mistakes:
+
+**❌ Don't:**
+- Use the same buy amount every time
+- Use zero delay between buys
+- Forget to fund wallets first
+- Sell before checking balance
+
+**✅ Do:**
+- Vary your buy amounts
+- Use random delays
+- Always check balances first
+- Use confirmation dialogs carefully
+
+---
+
+## 💸 Understanding Fees
+
+### Automatic 2% Fee
+
+ParaPack automatically takes a 2% fee on all transactions:
+
+**Example:**
+- You transfer 1 SOL
+- Fee: 0.02 SOL (2%)
+- You receive: 0.98 SOL
+
+**Where you'll see fees:**
+- Before transfers (shown clearly)
+- In statistics (total fees paid)
+- On every transaction
+
+**💡 Note:** Fees go to the bot operator, not Telegram!
+
+---
+
+## ❓ Getting Help
+
+### Built-in Help
+
+Send `/help` anytime to see the help menu!
+
+### Canceling Operations
+
+Made a mistake? Want to stop?
+
+1. Send `/cancel` anytime
+   - Or tap **❌ Cancel** button
+2. Current operation stops
+3. Return to main menu
+
+### Common Issues
+
+**"No wallets found"**
+- Generate or import wallets first
+- Go to Wallet Management → Generate Wallets
+
+**"Insufficient balance"**
+- Check wallet balances
+- Fund wallets via Transfer menu
+
+**"Transaction failed"**
+- Check network status
+- Try increasing slippage
+- Make sure wallet has enough SOL
+
+**"Bot not responding"**
+- Wait a moment (might be processing)
+- Try sending `/start`
+- Contact support if issue persists
+
+---
+
+## 📱 Commands Quick Reference
+
+You can type these commands anytime:
+
+- `/start` - Show main menu
+- `/help` - Get help
+- `/stats` - View your statistics
+- `/cancel` - Cancel current operation
+
+**💡 Tip:** But you don't need commands! Just use the buttons! 🎯
+
+---
+
+## 🔒 Security & Privacy
+
+### Your Data is Safe
+
+- ✅ All wallets stored securely
+- ✅ Private keys never shared
+- ✅ Only you can access your data
+- ✅ No cloud uploads
+
+### Best Practices
+
+**Do:**
+- ✅ Keep your bot conversation private
+- ✅ Never share private keys
+- ✅ Back up important wallets externally
+- ✅ Use strong Telegram password
+
+**Don't:**
+- ❌ Share your bot with others
+- ❌ Screenshot private keys
+- ❌ Share your Telegram account
+- ❌ Store large amounts in volume wallets
+
+---
+
+## 🎯 Typical Workflow
+
+Here's how most people use ParaPack:
+
+### Daily Volume Trading
+
+**1. Morning Setup (5 minutes)**
+- Send `/start`
+- Check balances
+- Fund wallets if needed
+
+**2. Find a Token**
+- Get token address from PumpFun
+- Copy the CA (contract address)
+
+**3. Start Volume**
+- Tap Buy Modes → Human Mode
+- Paste token CA
+- Set delays (5-15 seconds)
+- Set sell percentage (100%)
+- Let it run!
+
+**4. Monitor**
+- Check progress messages
+- View stats occasionally
+- Let the bot work
+
+**5. Evening Cleanup**
+- Tap Sell Modes → Cleanup
+- Return SOL to main wallet
+- Done for the day!
+
+### Quick Bump
+
+**1. Open Bot**
+- Send `/start`
+
+**2. Choose MicroBuy**
+- Tap Buy Modes → MicroBuy
+- Enter token CA
+- Enter delay (3000)
+- Let it spam!
+
+**3. Stop When Ready**
+- Send `/cancel`
+- Or tap Cancel button
+
+### One-Time Volume
+
+**1. Setup**
+- Generate 10 wallets
+- Fund them
+
+**2. Bundle Buy**
+- Tap Buy Modes → Bundle Buy
+- Enter token CA
+- Enter delay (5000)
+- Execute!
+
+**3. Sell**
+- Wait desired time
+- Tap Sell Modes → Sell All
+- Enter same token CA
+- Enter 100%
+- Done!
+
+---
+
+## 🎉 You're Ready!
+
+You now know everything you need to use ParaPack like a pro!
+
+### Remember:
+
+1. **Start Small** - Test with small amounts
+2. **Use Buttons** - Everything is just a tap away
+3. **Check Balances** - Before trading
+4. **Monitor Fees** - 2% on all transactions
+5. **Get Help** - Send `/help` anytime
+
+### Quick Start Checklist:
+
+- [ ] Send `/start` to open bot
+- [ ] Generate 10-20 wallets
+- [ ] Fund wallets with SOL
+- [ ] Try Human Mode
+- [ ] Check your stats
+- [ ] Customize settings
+
+### Need More Help?
+
+- **In Bot:** Send `/help`
+- **Support:** Contact @rust_devv
+- **Emergency:** Send `/cancel` to stop anything
+
+---
+
+**Happy Trading!** 🚀💰
+
+Remember: ParaPack handles everything automatically - you just press buttons and watch the volume roll in! 
+
+**Let's make some volume!** 🔥
+
