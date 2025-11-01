@@ -139,11 +139,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 tracking-tight text-white"
+            className="text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 tracking-tight"
             style={{
               fontFamily: '"Fredoka", "Baloo 2", "Varela Round", cursive',
               letterSpacing: '0.05em',
-              textShadow: '0 4px 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3)'
+              color: '#10b981',
+              textShadow: '0 4px 20px rgba(16, 185, 129, 0.6), 0 0 40px rgba(16, 185, 129, 0.4)'
             }}
           >
             PumpDotVol
@@ -167,7 +168,7 @@ export default function Home() {
             <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0 animate-pulse-glow"
+                className="text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 animate-pulse-glow"
                 data-testid="button-launch-bot"
               >
                 Launch Bot
@@ -337,7 +338,7 @@ export default function Home() {
             <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 border-0"
+                className="text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0"
                 data-testid="button-launch-bot-cta"
               >
                 Launch on Telegram

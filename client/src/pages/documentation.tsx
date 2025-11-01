@@ -710,7 +710,7 @@ export default function Documentation() {
             <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700"
+                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
                 data-testid="button-launch-telegram"
               >
                 Launch Bot on Telegram

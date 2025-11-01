@@ -93,7 +93,7 @@ export default function Footer() {
               />
               <Button 
                 size="icon" 
-                className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 flex-shrink-0"
+                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 flex-shrink-0"
                 data-testid="button-newsletter-subscribe"
               >
                 <Send className="w-4 h-4" />
