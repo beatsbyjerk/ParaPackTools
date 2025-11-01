@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Send, Twitter, MessageCircle } from "lucide-react";
-import logoImage from "@assets/Untitled design (4)_1762025526490.png";
+import logoImage from "@assets/logo.png";
 
 export default function Footer() {
   return (

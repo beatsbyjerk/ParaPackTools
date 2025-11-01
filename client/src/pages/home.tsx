@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import logoImage from "@assets/Untitled design (4)_1762025526490.png";
+import logoImage from "@assets/logo.png";
 import heroBackground from "@assets/stock_images/abstract_blockchain__7a1ceea8.jpg";
 import dashboardMockup from "@assets/stock_images/cryptocurrency_tradi_98d65b29.jpg";
 

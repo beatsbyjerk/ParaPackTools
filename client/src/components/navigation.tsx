@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Home, ExternalLink } from "lucide-react";
-import logoImage from "@assets/Untitled design (4)_1762025526490.png";
+import logoImage from "@assets/logo.png";
 import { motion } from "framer-motion";
 
 export default function Navigation() {
