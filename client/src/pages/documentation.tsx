@@ -279,7 +279,7 @@ export default function Documentation() {
             </div>
             <div>
               <h1 className="text-5xl font-bold font-display text-white">User Guide</h1>
-              <p className="text-xl text-muted-foreground mt-2">Learn how to use ParaPack via Telegram - no coding required!</p>
+              <p className="text-xl text-muted-foreground mt-2">Learn how to use PumpDotVol via Telegram - no coding required!</p>
             </div>
           </div>
         </motion.div>
@@ -333,7 +333,7 @@ export default function Documentation() {
                       </li>
                       <li className="flex gap-3">
                         <span className="text-purple-400 font-semibold">2.</span>
-                        <span>Search for your ParaPack bot by username</span>
+                        <span>Search for your PumpDotVol bot by username</span>
                       </li>
                       <li className="flex gap-3">
                         <span className="text-purple-400 font-semibold">3.</span>
@@ -626,7 +626,7 @@ export default function Documentation() {
 
                     <div className="p-4 rounded-lg bg-purple-500/10 border border-purple-500/20">
                       <h4 className="font-medium text-purple-400 mb-2">Understanding Fees</h4>
-                      <p className="text-sm text-foreground/80">ParaPack automatically takes a 2% fee on all transactions.</p>
+                      <p className="text-sm text-foreground/80">PumpDotVol automatically takes a 2% fee on all transactions.</p>
                       <div className="mt-2 text-sm text-muted-foreground">
                         <p>Example: Transfer 1 SOL → Fee: 0.02 SOL (2%) → You receive: 0.98 SOL</p>
                       </div>
@@ -705,7 +705,7 @@ export default function Documentation() {
           <Card className="p-8 bg-gradient-to-br from-purple-500/10 to-cyan-500/10 border-purple-500/20 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Trading?</h3>
             <p className="text-muted-foreground mb-6">
-              Open ParaPack on Telegram and start automating your Solana trading with simple button taps
+              Open PumpDotVol on Telegram and start automating your Solana trading with simple button taps
             </p>
             <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
               <Button 

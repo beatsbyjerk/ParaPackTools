@@ -13,9 +13,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logoImage} alt="ParaPack Tools" className="h-12 w-12" data-testid="footer-logo" />
+              <img src={logoImage} alt="PumpDotVol" className="h-12 w-12" data-testid="footer-logo" />
               <span className="font-display font-bold text-xl text-white">
-                ParaPack Tools
+                PumpDotVol
               </span>
             </div>
             <p className="text-muted-foreground mb-4">
@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 ParaPack Tools. All rights reserved.
+            © 2025 PumpDotVol. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <span className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer" data-testid="footer-terms">

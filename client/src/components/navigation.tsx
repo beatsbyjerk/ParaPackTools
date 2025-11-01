@@ -19,9 +19,9 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer hover-elevate p-2 rounded-lg transition-all" data-testid="link-logo">
-              <img src={logoImage} alt="ParaPack Tools" className="h-10 w-10" />
+              <img src={logoImage} alt="PumpDotVol" className="h-10 w-10" />
               <span className="font-display font-bold text-xl text-white">
-                ParaPack Tools
+                PumpDotVol
               </span>
             </div>
           </Link>

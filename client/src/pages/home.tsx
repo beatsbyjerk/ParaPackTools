@@ -128,7 +128,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="flex items-center justify-center mb-8"
           >
-            <img src={logoImage} alt="ParaPack Tools" className="h-24 w-24 mr-4" data-testid="logo-hero" />
+            <img src={logoImage} alt="PumpDotVol" className="h-24 w-24 mr-4" data-testid="logo-hero" />
             <Badge variant="outline" className="px-4 py-2 text-sm border-purple-500/50 bg-purple-500/10 backdrop-blur-sm">
               <Zap className="w-3 h-3 mr-1 inline" />
               Powered by Solana
@@ -139,9 +139,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 font-display tracking-tight text-white"
+            className="text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 tracking-tight text-white"
+            style={{
+              fontFamily: '"Fredoka", "Baloo 2", "Varela Round", cursive',
+              letterSpacing: '0.05em',
+              textShadow: '0 4px 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3)'
+            }}
           >
-            ParaPack Tools
+            PumpDotVol
           </motion.h1>
 
           <motion.p
@@ -327,7 +332,7 @@ export default function Home() {
               Ready to Automate Your Trading?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Join traders using ParaPack Tools to maximize their Solana trading efficiency
+              Join traders using PumpDotVol to maximize their Solana trading efficiency
             </p>
             <a href="http://t.me/parapack" target="_blank" rel="noopener noreferrer">
               <Button 
