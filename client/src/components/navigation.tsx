@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Home, ExternalLink } from "lucide-react";
+import { BookOpen, Home, ExternalLink, ShoppingCart } from "lucide-react";
 import logoImage from "@assets/logo.png";
 import { motion } from "framer-motion";
 
@@ -50,16 +50,27 @@ export default function Navigation() {
             </Link>
           </div>
 
-          {/* CTA Button */}
-          <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
-            <Button 
-              className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 gap-2"
-              data-testid="nav-launch-bot"
-            >
-              Launch Bot
-              <ExternalLink className="w-4 h-4" />
-            </Button>
-          </a>
+          {/* CTA Buttons */}
+          <div className="flex items-center gap-3">
+            <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0 gap-2"
+                data-testid="nav-buy-token"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                BUY PumpDotVol
+              </Button>
+            </a>
+            <a href="http://t.me/Pumpdotvol_bot" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 gap-2"
+                data-testid="nav-launch-bot"
+              >
+                Launch Bot
+                <ExternalLink className="w-4 h-4" />
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </motion.nav>
