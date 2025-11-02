@@ -52,7 +52,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+            <a href="https://pump.fun/coin/8mt3TARyZMh9nYHRxfGQhSdCNKiLCvpUc4iDDHMupump" target="_blank" rel="noopener noreferrer">
               <Button 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0 gap-2"
                 data-testid="nav-buy-token"
